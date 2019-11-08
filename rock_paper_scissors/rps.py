@@ -3,7 +3,15 @@
 import sys
 
 def rock_paper_scissors(n):
-  pass 
+  plays = ["rock", "paper", "scissors"]
+    combo = [list(c) for c in itertools.permutations(plays, n)]
+    new_combo = []
+
+    for i in combo:
+        new_combo.append(i)
+    return new_combo
+
+print(rock_paper_scissors(5))
 
 
 if __name__ == "__main__":
